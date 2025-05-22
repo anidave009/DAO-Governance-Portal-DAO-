@@ -89,20 +89,20 @@ Using npm:
 npm start
 
 How to Use the DAO
-Connect Wallet: Click the "Connect MetaMask Wallet" button. Ensure MetaMask is on the Sepolia Testnet (or the TARGET_DAO_NETWORK you configured).
-Get Governance Tokens:
-The GovernanceToken contract mints tokens to the deployer's address upon deployment.
-To vote, other users will need these tokens. You'll need to implement a way to distribute them (e.g., by using MetaMask to transfer tokens from the deployer's account to other test accounts).
-Create a Proposal: Navigate to "Create Proposal", fill in the description, and submit.
-Vote on Proposals: Go to "Active Proposals". If you have GOV tokens and haven't voted yet, you can vote "Yes" or "No".
-View Results: After a proposal's deadline has passed (default is 2 days, or as configured in SimpleDAO.sol), navigate to "Voting Results" to see the outcome.
+*Connect Wallet: Click the "Connect MetaMask Wallet" button. Ensure MetaMask is on the Sepolia Testnet (or the TARGET_DAO_NETWORK you configured).
+*Get Governance Tokens:
+*The GovernanceToken contract mints tokens to the deployer's address upon deployment.
+*To vote, other users will need these tokens. You'll need to implement a way to distribute them (e.g., by using MetaMask to transfer tokens from the deployer's account to other test accounts).
+*Create a Proposal: Navigate to "Create Proposal", fill in the description, and submit.
+*Vote on Proposals: Go to "Active Proposals". If you have GOV tokens and haven't voted yet, you can vote "Yes" or "No".
+*View Results: After a proposal's deadline has passed (default is 2 days, or as configured in SimpleDAO.sol), navigate to "Voting Results" to see the outcome.
 
 
 Troubleshooting
-"MetaMask is not installed": Ensure MetaMask extension is installed and enabled.
-"Wrong Network": Your MetaMask is not connected to the TARGET_DAO_NETWORK (e.g., Sepolia). Use the "Switch Network" button or change it manually in MetaMask.
-"Failed to initialize smart contracts...":
-Double-check that REACT_APP_TOKEN_CONTRACT_ADDRESS and REACT_APP_DAO_CONTRACT_ADDRESS in your .env file are correct and that the contracts are deployed on the target network.
-Verify that src/abis/GovernanceTokenABI.json and src/abis/SimpleDAOABI.json contain the correct ABIs for your deployed contracts.
-Transactions failing: Ensure your connected account has enough Sepolia ETH for gas fees.
-Functions not found (e.g., createProposal is not a function): This usually means the ABI in your .json file does not match the contract deployed at the address, or the address is incorrect. Re-check ABIs and contract addresses
+*MetaMask is not installed": Ensure MetaMask extension is installed and enabled.
+*Wrong Network": Your MetaMask is not connected to the TARGET_DAO_NETWORK (e.g., Sepolia). Use the "Switch Network" button or change it manually in MetaMask.
+*Failed to initialize smart contracts...":
+*Double-check that REACT_APP_TOKEN_CONTRACT_ADDRESS and REACT_APP_DAO_CONTRACT_ADDRESS in your .env file are correct and that the contracts are deployed on the target network.
+*Verify that src/abis/GovernanceTokenABI.json and src/abis/SimpleDAOABI.json contain the correct ABIs for your deployed contracts.
+*Transactions failing: Ensure your connected account has enough Sepolia ETH for gas fees.
+*Functions not found (e.g., createProposal is not a function): This usually means the ABI in your .json file does not match the contract deployed at the address, or the address is incorrect. Re-check ABIs and contract addresses
