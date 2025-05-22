@@ -39,12 +39,13 @@ Before you begin, ensure you have the following installed:
     *   We'll use Remix for these instructions for simplicity: [Remix Ethereum IDE](https://remix.ethereum.org/)
 
 ## Project Setup and Running Locally
+1. Install Dependencies and install react app first : 'watch youtube video ,its basic '.
+2. Follow these steps :-
+4. In the app change App.js , index.js and index.css(if present) with the files above.
+5. Create one folder (components )  and add (createproposal.js,activeproposal,results) in it and create another folder (contexts) and add (web3context.js) in it. Included an image which describes
+the flow of project / directory of files.
 
-1. Clone the Repository:**
-2. Install Dependencies: Using npm: npm install **
-
-
-3. Deploy Smart Contracts (using Remix IDE):
+6. Deploy Smart Contracts (using Remix IDE):
    
 a. Deploy GovernanceToken.sol:
 * Go to Remix Ethereum IDE.
@@ -69,7 +70,7 @@ b. Deploy SimpleDAO.sol:
 * Confirm the transaction in MetaMask.
 * Once deployed, copy the address of your deployed SimpleDAO contract. Save this too.
 
-* PASTE BOTH CONTRACT ADDRESS (GOVTOKEN.SOL AND SIMPLEDAO.SOL) FROM YOUR REMIX/ETHERSCAN IN WEB3CONTEXT.SOL FILE IN CONTEXTS FOLDER.
+* PASTE BOTH CONTRACT ADDRESS (GOVTOKEN.SOL AND SIMPLEDAO.SOL) FROM YOUR REMIX/ETHERSCAN IN WEB3CONTEXT.SOL FILE IN CONTEXTS FOLDER in PLACEHOLDERS .
 
 4. Obtain ABIs (Application Binary Interfaces):
 While still in Remix, for each compiled contract (GovernanceToken and SimpleDAO):
