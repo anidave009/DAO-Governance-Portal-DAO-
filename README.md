@@ -1,4 +1,4 @@
-# DAO-Governance-Portal-DAO-
+# DAO-Governance-Portal
 # Simple DAO Governance Portal
 
 A basic Decentralized Autonomous Organization (DAO) governance portal built with React. Users can connect their MetaMask wallet, create proposals, view active proposals, vote on proposals (if they hold the DAO's governance token), and view the results of past proposals.
